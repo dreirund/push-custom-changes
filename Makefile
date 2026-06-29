@@ -1,8 +1,9 @@
 # SPDX-License-Identifier: BSD-3-Clause
-PREFIX=/usr
-EPREFIX=
-BINDIR=$(PREFIX)/bin
-DATADIR=$(PREFIX)/share/push
+PREFIX  ?= /usr
+EPREFIX ?=
+BINDIR  ?= $(PREFIX)/bin
+DATADIR ?= $(PREFIX)/share/push
+DESTDIR ?= 
 
 .PHONY: FORCE all install uninstall clean distclean maintainer-clean
 
